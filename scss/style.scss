@@ -1,0 +1,53 @@
+@import "./base";
+@import "./fonts";
+@import "./colors";
+@import "./container";
+@import "./article.";
+@import "./wrappers";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--m-bg-black);
+}
+
+.title {
+  color: var(--m-white);
+  font-size: 75px;
+}
+
+.btn__active {
+  border-radius: 15px;
+  background-color: var(--m-blue-f9-btn);
+  color: var(--m-white);
+  &:active {
+    transform: scale(0.9);
+  }
+  &-default {
+    background-color: var(--m-bg-black);
+    color: var(--m-dark-light);
+    border: 1px solid var(--m-dark-light);
+    border-radius: 15px;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 38px;
+  }
+}
+@import "./nav";
+@import "./main";
+@import "./creators";
+@import "./followers";
+@import "./sharepage";
+@import "./experts";
+@import "./audience";
+@import "./setup";
+@import "./footer";

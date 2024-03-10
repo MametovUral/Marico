@@ -1,0 +1,18 @@
+.experts {
+  text-align: center;
+  margin-bottom: 219px;
+
+  h5 {
+    margin-bottom: 52px;
+  }
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .experts {
+    margin-bottom: 150px;
+  }
+}

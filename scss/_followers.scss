@@ -1,0 +1,139 @@
+.followers {
+  margin-bottom: 189px;
+  &__btn {
+    text-align: center;
+    button {
+      padding: 22px 81px;
+      font-size: 20px;
+    }
+  }
+}
+.followerss {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  .followers-d {
+    width: 854px;
+    background-color: var(--m-bg-dark);
+    padding: 33px 0 0 45px;
+    p {
+      font-size: 30px;
+      color: var(--m-green);
+      margin-bottom: 50px;
+    }
+  }
+  &__link {
+    margin-right: 15px;
+    &-title {
+      max-width: 623px;
+      margin-bottom: 46px;
+      h4 {
+        font-size: 80px;
+        color: var(--m-font-dark);
+        span {
+          color: var(--m-white);
+        }
+      }
+    }
+    &-img {
+      text-align: end;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__subscribers {
+    p {
+      padding-bottom: 90px;
+    }
+    .followerss__link-title {
+      max-width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .followerss {
+    gap: 15px;
+    flex-wrap: wrap;
+    .followers-d {
+      width: 100%;
+    }
+    &__link {
+      margin-right: 0;
+    }
+    &__subscribers {
+      p {
+        padding-bottom: 30px;
+      }
+      .followerss__link-title {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .followers {
+    margin-bottom: 90px;
+    &__btn {
+      button {
+        padding: 18px 71px;
+        font-size: 18px;
+      }
+    }
+  }
+  .followerss {
+    &__link {
+      &-title {
+        h4 {
+          font-size: 65px;
+        }
+      }
+    }
+    &__subscribers {
+      p {
+        padding-bottom: 0px;
+      }
+      .followerss__link-title {
+        h4 {
+          font-size: 65px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .followers {
+    margin-bottom: 60px;
+    &__btn {
+      button {
+        padding: 12px 48px;
+        font-size: 13px;
+      }
+    }
+  }
+  .followerss {
+    &__link {
+     
+      &-title {
+        h4 {
+          font-size: 45px;
+        }
+      }
+    }
+    &__subscribers {
+      p {
+        padding-bottom: 0px;
+      }
+      .followerss__link-title {
+        h4 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}

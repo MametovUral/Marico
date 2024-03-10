@@ -1,0 +1,142 @@
+.setup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 184px;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    h2 {
+      color: var(--m-white);
+      font-size: 100px;
+      line-height: 150px;
+    }
+    p {
+      color: var(--m-white);
+      font-size: 43px;
+      line-height: 64px;
+    }
+  }
+  &__btn {
+    margin-bottom: 26px;
+    button {
+      padding: 29px 113px;
+      font-size: 30px;
+    }
+  }
+  &__dot {
+    .main__meta-info {
+      column-gap: 12px;
+      .meta-info {
+        column-gap: 22px;
+        img {
+          width: 37px;
+          height: 37px;
+        }
+        p {
+          font-size: 38px;
+        }
+      }
+      p {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .setup {
+    margin-bottom: 90px;
+    &__logo {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 15px;
+      h2 {
+        font-size: 75px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 28px;
+        line-height: 64px;
+      }
+    }
+    &__btn {
+      margin-bottom: 26px;
+      button {
+        padding: 23px 85px;
+        font-size: 18px;
+      }
+    }
+    &__dot {
+      .main__meta-info {
+        .meta-info {
+          column-gap: 12px;
+          img {
+            width: 29px;
+            height: 29px;
+          }
+          p {
+            font-size: 23px;
+          }
+        }
+        p {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .setup {
+    margin-bottom: 60px;
+    &__logo {
+      margin-bottom: 20px;
+      img {
+        width: 150px;
+        height: 140px;
+      }
+    }
+    &__title {
+      margin-bottom: 15px;
+      h2 {
+        font-size: 45px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 23px;
+        line-height: 54px;
+      }
+    }
+    &__btn {
+      margin-bottom: 26px;
+      button {
+        padding: 13px 45px;
+        font-size: 14px;
+      }
+    }
+    &__dot {
+      .main__meta-info {
+        .meta-info {
+          column-gap: 12px;
+          img {
+            width: 29px;
+            height: 29px;
+          }
+          p {
+            font-size: 23px;
+          }
+        }
+        p {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
